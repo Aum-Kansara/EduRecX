@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+.msgBox{
+    position: relative;
+}
+
+.msg{
+    font-family: 'Rubik', sans-serif;
+    font-size: smaller;
+    font-weight: 600;
+    max-width: 65%;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: rgb(54, 47, 47);
+    padding: 0.6rem;
+    text-align: center;
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+        width: 100%;
+        padding: 1rem;
+        gap: 0.7rem;
+        flex-direction: row-reverse;}
+
+.left{
+    display: flex;
+        width: 100%;
+        padding: 1rem;
+        gap: 0.7rem;
+    /* justify-content: flex-end; */
+}
+
+
+.volumeBtn{
+    color: #ffffff;
+    /* background-color: khaki; */
+    position: absolute;
+    right: 67px;
+        bottom: 21px;
+}

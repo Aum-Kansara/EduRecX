@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@layer utilities {
+  .brightness-full {
+    filter: brightness(100%);
+  }
+}
+
+@layer components {
+  .heroBG {
+    background-image: url("/src/assets/BGhome.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(30%);
+  }
+
+  .list {
+    @apply flex items-center h-[80%]  border-b-2  border-transparent transition-border duration-200 ease-in-out hover:border-white cursor-pointer;
+  }
+  .input {
+    @apply w-[100%] text-white text-lg bg-transparent  border-b-[1px] border-b-borderBottom-before hover:border-b-[2px] focus:outline-none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+    /* background-color: transparent !important; */
+    -webkit-text-fill-color: #fff !important;
+  }
+  .input_border {
+    @apply w-0 absolute bg-white h-[2px] bottom-0 left-0 transition-all duration-200;
+  }
+
+  .input:focus ~ .input_border {
+    width: 100%;
+  }
+
+  .backbutton {
+    @apply h-5 w-5 transition duration-150 hover:scale-150 hover:cursor-pointer;
+    transition: all 150ms;
+    &:hover {
+      scale: 2%;
+      cursor: pointer;
+    }
+  }
+
+  .bc {
+    @apply transition-all duration-300 border-2 border-white;
+  }
+  .bb-t {
+    @apply cursor-pointer border-b-2 border-transparent hover:border-white;
+  }
+
+  .height-transition {
+    transition: height 0.3s;
+  }
+
+  .resHeadText {
+    @apply text-sm md:text-lg lg:text-xl;
+  }
+
+  .otpSpanBox {
+    @apply text-sm text-blue-400 h-full w-[10%] bg-white;
+  }
+}

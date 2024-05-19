@@ -1,0 +1,41 @@
+.videolist {
+  height: 100%;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  overflow: scroll;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%;
+}
+
+.videolist::-webkit-scrollbar {
+  width: 5px;
+}
+/* Customize scrollbar for WebKit browsers (Chrome, Safari) */
+.videolist::-webkit-scrollbar {
+  width: 5px; /* Set your preferred height */
+  /* transform: translateY(-10px); */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.videolist:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+
+.videolist::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+/* Optional: Hide scrollbar thumb when not hovering */
+.videolist:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

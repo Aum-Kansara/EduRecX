@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;700&display=swap');
+
+
+.chatContainer{
+    /* border: 2px solid white; */
+    background-color: rgb(31, 6, 5);
+    width: 400px;
+    /* height: 320px; */
+    height: 500px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.chat-ele{
+    width: 100%;
+    /* border: 1px solid white; */
+    margin: 0.2rem 0rem;
+}
+
+.chat-header{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    height: 10%;
+    /* border-bottom: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ctrl{
+    width: 8%;
+    display: flex;
+    gap: 0.4rem;
+    position: absolute;
+    right: 15px;
+}
+
+
+.chat-body{
+    height: 75%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: flex-end; */
+}
+
+.chat-body::-webkit-scrollbar{
+    display: none;
+}
+
+.chat-footer{
+    /* border: 1px solid white; */
+    height: 10%;
+    margin-bottom: 0;
+}
+.chat-footer > form{
+    display: flex;
+    justify-content: center;
+}
+
+.msgCont{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 80%;
+            border: 1px solid white;
+            border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+.btn {
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    position: absolute;
+    right: 5px;
+}
+
+.speechBtns{
+    position: absolute;
+    left: 15px;
+}
+
+.speechBtns:hover{
+    cursor: pointer;
+}
