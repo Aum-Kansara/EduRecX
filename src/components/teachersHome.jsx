@@ -6,7 +6,7 @@ import LoginRole from "../elements/LoginRole";
 import TeacherClassListPage from "../elements/TeacherClassListPage";
 import { io } from "socket.io-client";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
 
 const TeacherHome = () => {
   const sendMsg = (msg) => {

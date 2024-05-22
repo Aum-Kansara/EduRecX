@@ -27,7 +27,7 @@ const LoginCard = ({ id, ref }) => {
   const { token, setToken, decodedData, userRole } = useUserData();
   const { setRole, userLoggingIn, setUserLogginIn } = uselocalStore();
 
-  const BASEURL = "http://localhost:8080";
+  const BASEURL = "https://edurecx-backend-api-ugxdufb6ga-em.a.run.app";
 
   const handleClick = () => {
     setOpen(true);

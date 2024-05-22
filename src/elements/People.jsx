@@ -29,7 +29,7 @@ const People = () => {
   const { role } = decodedData(localStorage.getItem("token"));
 
   useEffect(() => {
-    const newSocket = io.connect("http://localhost:4000");
+    const newSocket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
     setSocket(newSocket);
 
     // Clean up the socket connection when component unmounts

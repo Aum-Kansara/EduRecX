@@ -26,7 +26,7 @@ const ChatBOT = () => {
     useSpeechRecognition();
 
   const axiosConfig = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://edurecx-chatbot-backend-api-ugxdufb6ga-em.a.run.app",
     method: ["GET"],
   });
 

@@ -2,8 +2,8 @@ import axios from "axios";
 import { useUserData } from "../store/store";
 import { useParams } from "react-router-dom";
 
-const baseURL = "http://localhost:8080";
-// const baseURL = "https://a6f2-103-251-227-203.ngrok-free.app";
+// const baseURL = "http://localhost:8080";
+const baseURL = "https://edurecx-backend-api-ugxdufb6ga-em.a.run.app";
 
 export async function getClasses(role, roleID) {
   try {

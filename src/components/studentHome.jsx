@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 import msgTune from "../assets/notification.mp3";
 import Survey from "./Survey";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
 
 const StudentHome = () => {
   const [msg, setMsg] = useState();
