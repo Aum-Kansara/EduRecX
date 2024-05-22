@@ -37,7 +37,7 @@ const ChatBOT = () => {
         params: { query: msg },
       })
       .then((res) => {
-        updateMsgList(res.data, "left");
+        updateMsgList(res.data.msg, "left");
         setReceivingStatus(false);
       });
   };
@@ -60,7 +60,7 @@ const ChatBOT = () => {
   useEffect(() => {
     const getData = async () => {
       await axiosConfig.get(`/start`).then((res) => {
-        updateMsgList(res.data, "left");
+        updateMsgList(res.data.msg, "left");
         setReceivingStatus(false);
         setOnStart(false);
       });
@@ -146,7 +146,7 @@ const ChatBOT = () => {
               value={listeningStatus ? transcript : msg}
               onChange={(e) => {
                 e.preventDefault();
-                console.log(e.target.value);
+                // console.log(e.target.value);
                 setMsg(e.target.value);
               }}
             />
