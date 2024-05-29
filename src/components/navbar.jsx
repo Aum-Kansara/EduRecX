@@ -28,10 +28,12 @@ const Navbar = () => {
           <Logo />
         </div>
         <div className="h-[100%] px-4 hidden md:block ">
-          <ul className="flex items-center gap-5 h-[100%] ">
-            <li className="list">about</li>
-            <li className="list">features</li>
+          <ul className="flex items-center gap-8 h-[100%] ">
+          <li className="list">Why EduRecX ?</li>
+            <li className="list">Features</li>
             <li className="list">Members</li>
+            <li className="list">About</li>
+            <li className="list">Contact</li>
           </ul>
         </div>
         <div
