@@ -40,7 +40,7 @@ const Home = () => {
         <div className="heroBG absolute  top-0 left-0  h-[100vh] w-[100vw] "></div>
         <div
           ref={cardContainer}
-          className="flex flex-col justify-center  items-center min-h-screen w-screen "
+          className="flex flex-col justify-center  items-center min-h-screen w-screen"
         >
           {accountCard ? (
             showLoginPage ? (
@@ -52,10 +52,10 @@ const Home = () => {
             <Hero />
           )}
         </div>
-        <div className="min-h-screen  snap-start bg-gray-600 w-screen"></div>
+        {/* <div className="min-h-screen  snap-start bg-gray-600 w-screen"></div>
         <div className="min-h-screen snap-start bg-gray-700 w-screen"></div>
         <div className="min-h-screen snap-start bg-gray-800 w-screen"></div>
-        <div className="min-h-screen snap-start bg-gray-900 w-screen"></div>
+        <div className="min-h-screen snap-start bg-gray-900 w-screen"></div> */}
       </div>
     </div>
   );

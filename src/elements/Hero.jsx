@@ -57,7 +57,7 @@ const Hero = () => {
   return (
     <div
       ref={heroContainer}
-      className="h-[100%]  max-h-[70vh] w-[100%] flex backdrop-blur-sm justify-center gap-5  text-white"
+      className="h-[100%]  max-h-[70vh] w-[100%] flex justify-center gap-5  text-white z-0 backdrop-blur-sm"
     >
       <div className="img hidden md:block">
         <img src={teacher} className="h-full w-full"></img>

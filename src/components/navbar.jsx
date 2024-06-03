@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div
       ref={nav}
-      className="h-[4rem] flex fixed top-0 md:top-5 backdrop-blur-lg md:backdrop-blur-0 w-screen z-10 "
+      className="h-[4rem] flex fixed top-0 md:top-5 w-screen z-10 h-100"
     >
       <nav
         id="nav"
