@@ -2,8 +2,8 @@ import React from "react";
 
 const logo = () => {
   return (
-    <div >
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="120" height="120" viewBox="0 0 1500 1073">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="115" height="115" viewBox="0 0 1500 1073">
       <g transform="matrix(1,0,0,1,-1.0230905746034296,39.082627127129854)">
           <svg viewBox="0 0 352 252" data-background-color="#312d2d" preserveAspectRatio="xMidYMid meet" height="1073" width="1500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="tight-bounds" transform="matrix(1,0,0,1,0.24008525484026677,4.857945264318488)">

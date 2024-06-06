@@ -118,10 +118,10 @@ const LoginCard = ({ id, ref }) => {
     <div
       id={id}
       ref={ref}
-      className="logincard w-[30%] min-w-[300px] z-[2] relative bg-transparent backdrop-blur-lg md:flex-0 shrink-0 rounded"
+      className="logincard w-[30%] min-w-[300px] z-[2] relative bg-transparent backdrop-blur-lg md:flex-0 shrink-0 rounded-2xl"
     >
       <div
-        className="absolute top-0 right-5 text-white p-2 z-10  transition duration-150 hover:scale-150 hover:cursor-pointer"
+        className="absolute right-3 top-1 text-white p-2 z-10  transition duration-150 hover:scale-150 hover:cursor-pointer"
         onClick={(e) => {
           closeAnimation();
           setTimeout(() => {
@@ -132,7 +132,7 @@ const LoginCard = ({ id, ref }) => {
         <FontAwesomeIcon icon={faXmark} className="h-5 w-5" />
       </div>
       <div className="relative text-white z-0 flex flex-col min-w-0 break-words  border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-        <div className="p-5 text-center  border-b-0 rounded-t-2xl font-bold text-lg tracking-wide font-mono">
+        <div className="p-4 text-center mt-4 border-b-0 rounded-t-2xl font-bold text-lg tracking-wide font-mono">
           <h3>Login</h3>
         </div>
         <div className="flex flex-wrap gap-2 justify-center sm:px-6 xl:px-12">
@@ -155,7 +155,7 @@ const LoginCard = ({ id, ref }) => {
               />
             </a>
           </div> */}
-          <div className="flex items-center justify-center gap-2 relative w-full max-w-full px-3  text-center shrink-0">
+          <div className="flex items-center justify-center gap-2 relative w-full max-w-full px-2  text-center shrink-0">
             <hr className=" text-slate-500   w-[85%] opacity-25" />
             {/* <p className="z-20 inline  font-semibold leading-normal  text-sm text-slate-400">
               or

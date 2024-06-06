@@ -63,7 +63,6 @@ const RoleSwitch = () => {
       <span>Teacher</span>
       <Switch
         sx={{ m: 1 }}
-        size="34px"
         checked={role}
         onChange={(e) => {
           handleRoleChange(e.target.checked);

@@ -10,6 +10,11 @@
     display: none;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .brightness-full {
     filter: brightness(100%);
