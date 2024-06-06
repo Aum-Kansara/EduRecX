@@ -4,15 +4,15 @@ import AddClassBox from "../elements/addClassbox";
 import { uselocalStore } from "../store/store";
 import LoginRole from "../elements/LoginRole";
 import TeacherClassListPage from "../elements/TeacherClassListPage";
-import { io } from "socket.io-client";
+// import { io } from "socket.io-client";
 
-const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
+// const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
 
 const TeacherHome = () => {
   const sendMsg = (msg) => {
-    socket.emit("sendMsg", {
-      message: msg,
-    });
+    // socket.emit("sendMsg", {
+    //   message: msg,
+    // });
   };
 
   const {

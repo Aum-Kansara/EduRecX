@@ -12,7 +12,7 @@ import {
   faCross,
 } from "@fortawesome/free-solid-svg-icons";
 import { useUserData } from "../store/store";
-import io from "socket.io-client";
+// import io from "socket.io-client";
 
 import msgTune from "../assets/notification.mp3";
 
@@ -24,44 +24,44 @@ const People = () => {
   const [requests, setRequests] = useState([]);
   const [showRequests, setShowRequests] = useState(false);
   const { decodedData } = useUserData();
-  const [socket, setSocket] = useState(null);
+  // const [socket, setSocket] = useState(null);
 
   const { role } = decodedData(localStorage.getItem("token"));
 
-  useEffect(() => {
-    const newSocket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
-    setSocket(newSocket);
+  // useEffect(() => {
+  //   const newSocket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
+  //   setSocket(newSocket);
 
-    // Clean up the socket connection when component unmounts
-    return () => {
-      newSocket.disconnect();
-    };
-  }, []);
+  //   // Clean up the socket connection when component unmounts
+  //   return () => {
+  //     newSocket.disconnect();
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    const sound = new Audio(msgTune);
+  // useEffect(() => {
+  //   const sound = new Audio(msgTune);
 
-    const handleRequestCreate = (data) => {
-      setRequests((prev) => [...prev, data]);
-      sound.play();
-    };
+  //   const handleRequestCreate = (data) => {
+  //     setRequests((prev) => [...prev, data]);
+  //     sound.play();
+  //   };
 
-    const handleRequestDeleted = (data) => {
-      setRequests((prev) => prev.filter((req) => data._id !== req._id));
-    };
+  //   const handleRequestDeleted = (data) => {
+  //     setRequests((prev) => prev.filter((req) => data._id !== req._id));
+  //   };
 
-    // Attach event listeners
-    if (socket) {
-      socket.on("requestCreate", handleRequestCreate);
-      socket.on("requestDeleted", handleRequestDeleted);
-      return () => {
-        // Clean up event listeners when the component unmounts
+  //   // Attach event listeners
+  //   if (socket) {
+  //     socket.on("requestCreate", handleRequestCreate);
+  //     socket.on("requestDeleted", handleRequestDeleted);
+  //     return () => {
+  //       // Clean up event listeners when the component unmounts
 
-        socket.off("requestCreate", handleRequestCreate);
-        socket.off("requestDeleted", handleRequestDeleted);
-      };
-    }
-  }, [socket]);
+  //       socket.off("requestCreate", handleRequestCreate);
+  //       socket.off("requestDeleted", handleRequestDeleted);
+  //     };
+  //   }
+  // }, [socket]);
 
   useEffect(() => {
     const fetchData = async () => {

@@ -3,7 +3,7 @@ import "./check.css";
 
 const Check = () => {
   return (
-    <div className="containe flex justify-center w-[80%] ">
+    <div className="container flex justify-center w-[80%]">
       <input type="Checkbox" id="cbx" style={{ display: "none" }} />
       <label for="cbx" className="check flex items-center gap-3 justify-center">
         <svg width="18px" height="18px" viewBox="0 0 18 18">
@@ -13,7 +13,7 @@ const Check = () => {
         <span>I agree the </span>{" "}
       </label>
       <span>
-        <a className="font-bold  text-blue-500"> Terms and Conditions</a>
+        <a className="font-bold  text-blue-500 ml-1" href="#"> Terms and Conditions</a>
       </span>
     </div>
   );

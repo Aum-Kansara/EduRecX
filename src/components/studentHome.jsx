@@ -11,26 +11,26 @@ import SidebarList from "../elements/sidebarList";
 import VideosList from "../elements/VideoList";
 import { useUserData, uselocalStore } from "../store/store";
 import LoginRole from "../elements/LoginRole";
-import { io } from "socket.io-client";
+// import { io } from "socket.io-client";
 import { toast } from "react-toastify";
 import msgTune from "../assets/notification.mp3";
 import Survey from "./Survey";
 
-const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
+// const socket = io.connect("https://edurecx-backend-api-ugxdufb6ga-em.a.run.app");
 
 const StudentHome = () => {
   const [msg, setMsg] = useState();
 
-  useEffect(() => {
-    socket.on("receiveMsg", (data) => {
-      console.log(data);
-      setMsg(data.message);
-    });
+  // useEffect(() => {
+  //   socket.on("receiveMsg", (data) => {
+  //     console.log(data);
+  //     setMsg(data.message);
+  //   });
 
-    socket.on("studentAdded", (data) => {
-      console.log(data);
-    });
-  }, [socket]);
+  //   socket.on("studentAdded", (data) => {
+  //     console.log(data);
+  //   });
+  // }, [socket]);
 
   useEffect(() => {
     if (msg) {

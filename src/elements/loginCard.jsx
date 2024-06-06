@@ -118,7 +118,7 @@ const LoginCard = ({ id, ref }) => {
     <div
       id={id}
       ref={ref}
-      className="logincard w-[30%] min-w-[300px] z-[2] relative bg-transparent backdrop-blur-lg md:flex-0 shrink-0"
+      className="logincard w-[30%] min-w-[300px] z-[2] relative bg-transparent backdrop-blur-lg md:flex-0 shrink-0 rounded"
     >
       <div
         className="absolute top-0 right-5 text-white p-2 z-10  transition duration-150 hover:scale-150 hover:cursor-pointer"
@@ -132,35 +132,35 @@ const LoginCard = ({ id, ref }) => {
         <FontAwesomeIcon icon={faXmark} className="h-5 w-5" />
       </div>
       <div className="relative text-white z-0 flex flex-col min-w-0 break-words  border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-        <div className="p-3 text-center  border-b-0 rounded-t-2xl">
-          <h5>Login with</h5>
+        <div className="p-5 text-center  border-b-0 rounded-t-2xl font-bold text-lg tracking-wide font-mono">
+          <h3>Login</h3>
         </div>
         <div className="flex flex-wrap gap-2 justify-center sm:px-6 xl:px-12">
-          <div className="flex-0">
+          {/* <div className="flex-0">
             <a className="inline-block w-full p-2 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent  rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75">
               <FBicon className={"transition duration-150 hover:scale-150"} />
             </a>
-          </div>
-          <div className=" flex-0">
+          </div> */}
+          {/* <div className=" flex-0">
             <a className="inline-block w-full p-2 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent  rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75">
               <AppleIcon
                 className={"transition duration-150 hover:scale-150"}
               />
             </a>
-          </div>
-          <div className=" flex-0">
+          </div> */}
+          {/* <div className=" flex-0">
             <a className="inline-block w-full p-2 font-bold text-center text-gray-200 uppercase align-middle transition-all bg-transparent  rounded-lg shadow-none cursor-pointer hover:scale-102 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:bg-transparent hover:opacity-75">
               <GoogleIcon
                 className={"transition duration-150 hover:scale-150"}
               />
             </a>
-          </div>
+          </div> */}
           <div className="flex items-center justify-center gap-2 relative w-full max-w-full px-3  text-center shrink-0">
-            <hr className=" text-slate-500   w-[30%] opacity-20" />
-            <p className="z-20 inline  font-semibold leading-normal  text-sm text-slate-400">
+            <hr className=" text-slate-500   w-[85%] opacity-25" />
+            {/* <p className="z-20 inline  font-semibold leading-normal  text-sm text-slate-400">
               or
-            </p>
-            <hr className=" text-slate-500 w-[30%] opacity-20" />
+            </p> */}
+            {/* <hr className=" text-slate-500 w-[30%] opacity-20" /> */}
           </div>
         </div>
         <div className="flex-auto p-6">
@@ -175,7 +175,7 @@ const LoginCard = ({ id, ref }) => {
                   {...formik.getFieldProps("email")}
                   type="text"
                   className="input"
-                  placeholder="email"
+                  placeholder="Email"
                 />
                 <span className="input_border"></span>
               </div>
@@ -192,19 +192,19 @@ const LoginCard = ({ id, ref }) => {
 
             <div className="text-center">
               <button
-                className="inline-block bg-[#8C6A5D] px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-[105%] hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white"
+                className="inline-block bg-[#8C6A5D] px-6 py-3 mt-3 mb-3 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-[105%] hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white"
                 type="submit"
               >
                 Sign in
               </button>
             </div>
             <div>
-              register your account{" "}
+              New User? {" "}
               <span
                 onClick={() => {
                   toggleShowLoginPage();
                 }}
-                className="text-blue-400 hover:text-blue-700 cursor-pointer transition-all duration-150"
+                className="text-blue-400 hover:text-blue-700 cursor-pointer transition-all duration-150 ml-0.5 tracking-wide"
               >
                 Signup
               </span>
