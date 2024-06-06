@@ -6,7 +6,10 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Hero from "../elements/Hero";
-
+import nirav_parmar from '../assets/Nirav_Parmar.png';
+import aum_kansara from '../assets/Aum_Kansara.png';
+import raj_gupta from '../assets/Raj_Gupta.png';
+import risheet_parmar from '../assets/Risheet_Parmar.png';
 const Home = () => {
   const { showLoginPage, accountCard } = uselocalStore();
 
@@ -262,7 +265,7 @@ const Home = () => {
           {/* Member 1  */}
           <div class="max-w-sm bg-white border m-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="rounded-t-lg" src="src/assets/Aum_Kansara.png" alt="" width={540}/>
+                  <img class="rounded-t-lg" src={aum_kansara} alt="" width={540}/>
               </a>
               <div class="p-5">
                   <a href="#">
@@ -280,7 +283,7 @@ const Home = () => {
             {/* Member 2  */}
           <div class="max-w-sm bg-white border m-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="rounded-t-lg" src="src/assets/Raj_Gupta.png" alt="" width={500}  />
+                  <img class="rounded-t-lg" src={raj_gupta} alt="" width={500}  />
               </a>
               <div class="p-5">
                   <a href="#">
@@ -298,7 +301,7 @@ const Home = () => {
             {/* Member 3  */}
           <div class="max-w-sm bg-white border m-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="rounded-t-lg" src="src/assets/Nirav_Parmar.png" alt="" width={500}/>
+                  <img class="rounded-t-lg" src={nirav_parmar} alt="" width={500}/>
               </a>
               <div class="p-5">
                   <a href="#">
@@ -316,7 +319,7 @@ const Home = () => {
             {/* Member 4  */}
           <div class="max-w-sm bg-white border m-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="rounded-t-lg" src="src/assets/RIsheet_Parmar.png" alt="" width={540}/>
+                  <img class="rounded-t-lg" src={risheet_parmar} alt="" width={540}/>
               </a>
               <div class="p-5">
                   <a href="#">
