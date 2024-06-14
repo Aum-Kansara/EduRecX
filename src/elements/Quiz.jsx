@@ -267,7 +267,7 @@ const Quiz = ({ questionData, quizID }) => {
                 console.log(pmt);
               }}
             >
-              Get Personalised pathway
+              Get Personalised Pathway
             </button>
           </div>
         </div>

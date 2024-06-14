@@ -3,7 +3,7 @@ import { uselocalStore } from "../store/store";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Logo from "../assets/logo.jsx";
-import { redirect } from "react-router-dom";
+// import { redirect } from "react-router-dom";
 
 const Navbar = () => {
   const { showLoginPage, setShowLoginPage, accountCard, setAccountCard } =
@@ -45,7 +45,7 @@ const Navbar = () => {
           }}
           className="flex items-center p-1 px-2 font-bold my-3 tracking-wide rounded bg-blue-700 transition-color duration-200 hover:bg-blue-900 cursor-pointer "
         >
-          Try Now
+          <a href="#Home">Try Now</a>
         </div>
       </nav>
     </div>

@@ -337,7 +337,7 @@ const Home = () => {
         </div>
         <div className="min-h-screen snap-start bg-gray-900 w-screen" id="Pricing">
         <div class="pt-5 bg-gray-900" id="pricing">
-  <div class="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto pb-20 mt-20 max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
       <h1 class="text-base font-semibold leading-7 text-indigo-400">Pricing</h1>
       <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Whether it's just you, or your entire
@@ -354,7 +354,7 @@ const Home = () => {
         <p class="mt-6 flex items-baseline gap-x-1">
           <span class="text-4xl font-bold tracking-tight text-white">$ 0 / Month</span><span class="text-sm font-semibold leading-6 text-gray-300"></span>
         </p>
-        <a href="#order" aria-describedby="product1"
+        <a href="#Home" aria-describedby="product1"
           class="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Try
           Now</a>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
